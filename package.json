@@ -1,0 +1,29 @@
+{
+  "name": "threejs",
+  "version": "1.0.0",
+  "description": "Demo for implementing 3D models via threejs",
+  "main": "main.js",
+  "scripts": {
+    "test": "npx vite",
+    "dev": "npx vite"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lsaul/threejs.git"
+  },
+  "keywords": [
+    "threejs"
+  ],
+  "author": "lsaul",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lsaul/threejs/issues"
+  },
+  "homepage": "https://github.com/lsaul/threejs#readme",
+  "dependencies": {
+    "three": "^0.177.0"
+  },
+  "devDependencies": {
+    "vite": "^6.3.5"
+  }
+}
