@@ -7,6 +7,9 @@ import GUI from 'lil-gui';
 const gui = new GUI();
 gui.add( document, 'title' );
 
+
+
+
 const scene = new THREE.Scene();
 // const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
 const  camera = new THREE.PerspectiveCamera(70, 2, 1, 1000);
@@ -33,7 +36,7 @@ const controls = new OrbitControls( camera, renderer.domElement );
 // scene.add(light1);
 
 const color = 0xFFFFFF;
-const intensity = 1;
+const intensity = 10;
 const light = new THREE.AmbientLight(color, intensity);
 scene.add(light);
 
