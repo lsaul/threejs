@@ -1,0 +1,11 @@
+Model Information:
+* title:	City Scene
+* source:	https://sketchfab.com/3d-models/city-scene-e4d4d8150fcb4ed6a2c6efe959ad76d7
+* author:	Lorenzo de Vries (https://sketchfab.com/basshunt3r)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "City Scene" (https://sketchfab.com/3d-models/city-scene-e4d4d8150fcb4ed6a2c6efe959ad76d7) by Lorenzo de Vries (https://sketchfab.com/basshunt3r) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
