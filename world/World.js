@@ -19,7 +19,7 @@ let scene;
 let loop;
 
 class World {
-  constructor(container) {
+  constructor(container, model) {
     camera = createCamera();
     renderer = createRenderer();
     scene = createScene();
@@ -30,7 +30,8 @@ class World {
 
     // const cube = createCube();
     // const model = loadModel('models/cyberpunk_store/scene.gltf');
-    const model =  'models/cyberpunk_store/scene.gltf';
+    
+    console.log("world start model",  model);
     const { ambientLight, mainLight } = createLights();
 
     loop.updatables.push(controls);

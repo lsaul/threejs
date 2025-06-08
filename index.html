@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -10,13 +9,67 @@
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
+<script>
+
+//What do we need to do??
+//Set default model
+//On initial load, load the default model
+//
+//Pass default model to getModel function
+
+//When the model changes
+//Set the model in localstorage
+//Reload the page, and check localstorage to set the model
+//Pass the new model to the getModel function
+
+//default model handled in 'world.js'
+
+
+
+function setNewModel(model){
+    localStorage.setItem("model", model);
+    location.reload();
+    return;
+}
+
+
+// localStorage.setItem("model", "models/cyberpunk_store/scene.gltf");
+
+// let getNewModel = localStorage.getItem("model");
+// console.log(getNewModel);
+
+
+function getModel(){
+    // console.log('load model ', model);
+    let storedModel = localStorage.getItem("model");
+    let loadModel = storedModel ? storedModel : 'models/cyberpunk_store/scene.gltf'; 
+    return loadModel;
+}
+
+let loadModel = getModel();
+
+</script>
+
 <script type="module" src="/main.js"></script>
+
   </head>
   <body>
-    
+    <style>
+        #scene-container{
+            display: block;
+            height: 640px;
+            width: 800px;
+        }
+    </style>
 
     <div id="scene-container">
         <!-- Our <canvas> will be inserted here -->
-      </div>
+    </div>
+
+    <div id="loader-links">
+        <button onclick="setNewModel('models/city_scene/scene.gltf')">City Scene</button>
+        <button onclick="setNewModel('models/game_boy_classic/scene.gltf')">Gameboy</button>
+        <button onclick="setNewModel('models/cyberpunk_store/scene.gltf')">Cyberpunk</button> 
+    </div>
   </body>
 </html>
