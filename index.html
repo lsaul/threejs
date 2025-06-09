@@ -17,9 +17,7 @@ function setNewModel(model){
     localStorage.setItem("model", model);
     location.reload();
     return;
-}
-
- 
+} 
 
 function getModel(){
     // console.log('load model ', model);
@@ -39,8 +37,18 @@ let loadModel = getModel();
     <style>
         #scene-container{
             display: block;
+            float: left;
             height: 640px;
             width: 800px;
+        }
+        #loader-links{
+            float: left;
+        }
+        #loader-links div{
+            width: 250px;
+        }
+        #loader-links div img{
+            width: 100%;
         }
     </style>
 
@@ -49,9 +57,18 @@ let loadModel = getModel();
     </div>
 
     <div id="loader-links">
-        <button onclick="setNewModel('models/city_scene/scene.gltf')">City Scene</button>
-        <button onclick="setNewModel('models/game_boy_classic/scene.gltf')">Gameboy</button>
-        <button onclick="setNewModel('models/cyberpunk_store/scene.gltf')">Cyberpunk</button> 
+        <div class="imagelink">
+            <a href="javascript:" onclick="setNewModel('models/office_room/scene.gltf')"><img src="assets/img/office.png" /></a>
+        </div> 
+        <div class="imagelink">
+            <a href="javascript:" onclick="setNewModel('models/modern_bedroom/scene.gltf')"><img src="assets/img/modern_bedroom.png" /></a>
+        </div>
+        <div class="imagelink">
+            <a href="javascript:" onclick="setNewModel('models/midnight_bedroom/scene.gltf')"><img src="assets/img/midnight_bedroom.png" /></a>
+        </div>
+        <!-- <button onclick="setNewModel('models/modern_bedroom/scene.gltf')">Modern bedroom</button>
+        <button onclick="setNewModel('models/game_boy_classic/scene.gltf')">Modern Room</button>
+        <button onclick="setNewModel('models/cyberpunk_store/scene.gltf')">Cyberpunk</button>  -->
     </div>
   </body>
 </html>
