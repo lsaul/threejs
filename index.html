@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -9,8 +8,69 @@
     </style>
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+<script>
+
+function setNewModel(model){
+    localStorage.setItem("model", model);
+    location.reload();
+    return;
+} 
+
+function getModel(){
+    // console.log('load model ', model);
+    let storedModel = localStorage.getItem("model");
+    let loadModel = storedModel ? storedModel : 'models/cyberpunk_store/scene.gltf'; 
+    return loadModel;
+}
+
+let loadModel = getModel();
+
+</script>
+
+<script type="module" src="/main.js"></script>
+
   </head>
   <body>
-    <script type="module" src="/main.js"></script>
+    <style>
+        #scene-container{
+            display: block;
+            float: left;
+            height: 640px;
+            width: 800px;
+        }
+        #loader-links{
+            float: left;
+        }
+        #loader-links div{
+            width: 250px;
+            padding: 20px;
+            border: 1px solid gray;
+            margin: 20px;
+            border-radius: 5px;
+        }
+        #loader-links div img{
+            width: 100%;
+        }
+    </style>
+
+    <div id="scene-container">
+        <!-- Our <canvas> will be inserted here -->
+    </div>
+
+    <div id="loader-links">
+        <div class="imagelink">
+            <a href="javascript:" onclick="setNewModel('models/office_room/scene.gltf')"><img src="assets/img/office.png" /></a>
+        </div> 
+        <div class="imagelink">
+            <a href="javascript:" onclick="setNewModel('')"><img src="assets/img/modern_bedroom.png" /></a>
+        </div>
+        <div class="imagelink">
+            <a href="javascript:" onclick="setNewModel('models/midnight_bedroom/scene.gltf')"><img src="assets/img/midnight_bedroom.png" /></a>
+        </div>
+        <!-- <button onclick="setNewModel('models/modern_bedroom/scene.gltf')">Modern bedroom</button>
+        <button onclick="setNewModel('models/game_boy_classic/scene.gltf')">Modern Room</button>
+        <button onclick="setNewModel('models/cyberpunk_store/scene.gltf')">Cyberpunk</button>  -->
+    </div>
   </body>
-</html>
+</html>models/modern_bedroom/scene.gltf

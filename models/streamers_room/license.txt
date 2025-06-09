@@ -1,0 +1,11 @@
+Model Information:
+* title:	Streamer's Room
+* source:	https://sketchfab.com/3d-models/streamers-room-fbd9115ed7284f87b53cd1faa40b0580
+* author:	Alex Martire (https://sketchfab.com/alexmartire)
+
+Model License:
+* license type:	CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
+* requirements:	Author must be credited. No commercial use.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Streamer's Room" (https://sketchfab.com/3d-models/streamers-room-fbd9115ed7284f87b53cd1faa40b0580) by Alex Martire (https://sketchfab.com/alexmartire) licensed under CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
