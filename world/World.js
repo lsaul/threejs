@@ -20,14 +20,17 @@ let loop;
 
 class World {
   constructor(container, model) {
-    camera = createCamera();
+    let cameraPos = ''
+    if (model != 'models/modern_bedroom/scene.gltf'){cameraPos = 'default'}
+    camera = createCamera(cameraPos);
     renderer = createRenderer();
     scene = createScene();
     loop = new Loop(camera, scene, renderer);
     container.append(renderer.domElement);
 
     const controls = createControls(camera, renderer.domElement);
-
+    
+    
     // const cube = createCube();
     // const model = loadModel('models/cyberpunk_store/scene.gltf');
     
@@ -40,7 +43,11 @@ class World {
 
         scene.add( gltf.scene );
       
-      }, undefined, function ( error ) {
+      },function ( xhr ) {
+
+		console.log( ( xhr.loaded / xhr.total * 100 ) + '% loaded' );
+
+	}, undefined, function ( error ) {
       
         console.error( error );
       
